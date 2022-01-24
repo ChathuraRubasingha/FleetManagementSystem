@@ -1,0 +1,670 @@
+/* Restaurant View Page */
+h1#rest-title {
+	color: #000;
+    font-size: 1.6em;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+h2.small-title {
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #ccc;
+}
+
+h2.small-title small a {
+    font-size: 12px;
+    line-height: 1;
+}
+
+
+.panel-heading.large {
+	padding: 14px 15px;
+}
+.panel-heading.large span.address {
+	font-size: 13px;
+}
+
+/*
+.container.body {
+	padding-top: 0;
+}*/
+.dash-seperator {
+	width: 100%;
+	height: 1px;
+	margin: 20px 0;
+	border-top: 1px dashed #ccc;
+}
+.rest-view .description-info {
+	padding: 5px 0;
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+ul.rating-average {
+	margin: 5px 0;
+
+}
+ul.rating-average li:first-child {
+	padding-left: 0;
+}
+
+.rest-actions {
+	margin: 10px 0 0;
+	padding: 10px 0 0;
+	border-top: 1px dashed #ddd;
+}
+
+.btn-group.actions {
+	width: 100%;
+}
+.btn-group.actions .btn1 {
+	width: 33.333333%;
+}
+
+ul.action-stats li span {
+	font-size: 14px;
+}
+
+.countBubble {
+	margin-top: 5px;
+}
+
+.rest-view .rest-header  {
+	/*position: relative;*/
+	border-bottom: 1px solid #eee;
+	padding-bottom: 20px;
+	padding: 20px;
+/*	margin: -15px -15px 0;*/
+
+}
+
+.rest-view .rest-header .rating-box {
+	position: absolute;
+	top: 25px;
+	right: 20px;
+}
+
+
+.rest-view .likeBox {
+	padding: 0 15px 10px 15px;
+	height: 36px;
+	border-bottom: 1px solid #ddd;
+	margin: 0 -15px 10px;
+}
+
+
+.rest-view .facility-info {
+	border-top: 1px dashed #ddd;
+	padding: 20px 0;
+	margin: 10px 0;
+	width: 100%;
+}
+.rest-view ul.contact-info li {
+	margin-right: 15px;
+	padding: 0;
+
+}
+
+.rest-view ul.contact-info li:first-child {
+	padding-left: 0;
+}
+
+.rest-view ul.contact-info li.phone:before {
+
+	font-family: FontAwesome !important;
+	font-weight: normal !important;
+	padding-right: 5px;
+	-webkit-font-smoothing: antialiased;
+	font-weight: 100;
+	text-transform: none;
+	content: "\f10b";
+
+}
+
+.rest-view ul.contact-info li.mobile:before {
+	content: "\f10b";
+	font-size: 1.1em;
+		
+}
+
+.rest-view ul.contact-info li.landline:before {
+	content: "\f095";
+	font-size: 1.1em;
+		
+}
+
+
+#map {
+	min-height: 200px;
+	margin: 0 -15px 15px;
+	background-color: #fff;
+	
+	border-bottom: 1px solid #ccc;
+}
+
+#map img {
+	max-width: none;
+}
+
+.rest-view #main-review {
+	padding: 20px;
+	font-size: 1em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.rest-view #main-review p {
+    margin-bottom: 1.6em;
+}
+
+
+.rest-view #main-review h3 {
+	font-weight: 400;
+	font-size: 1.2em;
+	line-height: 1.5em;
+	text-align: start;
+	-webkit-hyphens: manual;
+	margin: 5px 0;
+}
+
+.rest-view .coverpic {
+	/*-webkit-border-radius: 4px 4px 0 0;
+    -moz-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;*/
+
+	height: 220px;
+	margin: 0;
+	padding: 0 20px;
+	border-bottom:1px solid #ccc;
+	background-image: url('../img/default-coverpic.html');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+/*.content.nearby p.address {
+	white-space: nowrap;
+  	text-overflow: ellipsis;
+  	overflow: hidden;
+}*/
+
+.rest-view ul.main-facilities {
+	display: block;
+	margin:  0;	
+	padding: 0; 
+	list-style: none;
+	width: 100%;
+	margin-top: 15px;
+	
+}
+
+.rest-view ul.main-facilities li {
+	float: left;
+	width: 25%;
+	white-space: nowrap;
+  	text-overflow: ellipsis;
+  	overflow: hidden;
+  	margin-bottom: 10px;
+
+
+}
+/*.rest-view ul.main-facilities li.info-facility-item:first-child {
+	margin-left: 0 !important;
+}
+*/
+.rest-view .info-facility-item .i-holder {
+	/*border: 1px solid #eee;
+	-webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;*/
+	
+	vertical-align: middle;
+
+}
+.rest-view .info-facility-item.disabled {
+	/*text-decoration: line-through;*/
+	color: #cccccc;
+}
+
+.rest-view .info-facility-item.disabled i {
+	text-decoration: none;
+}
+
+.rest-view .bottombox a{ color:#666;}
+.rest-view .bottombox a:hover{ color:#333;}
+
+.popover {
+	width: auto !important;
+	min-width: 200px;
+	max-width: 600px;
+}
+.opentime_row {
+	padding: 2px 0;
+}
+
+.opentime_row .opentime_left {
+	float: left;
+	text-align: right;
+	min-width: 35px;
+	
+	
+}
+
+.opentime_row .opentime_right {
+	margin-left: 40px;
+	text-align: left;
+	
+}
+
+.opentime_row.highlight {
+	font-weight: bold;
+	color: #333;
+}
+
+/* Restaurant Reviews*/
+/*.comments-list {
+	margin: 0 -15px;
+}*/
+.review-content-holder .tab-content{
+	margin: 0 -15px;
+}
+
+/*.review-content-holder .tab-content .comments-list{
+	margin: 0;
+}*/
+
+.gallery .thumbnail {
+	margin-bottom: 0;
+}
+
+.thumbnail img {
+	border-radius: 3px;
+}
+
+
+.gallery-page .thumbnail img {
+	width: 166px;
+	height: 124px;
+}
+
+.gallery .placeholder {
+	display: block;
+	width: 146px;
+	height: 110px;
+	border: 2px dashed #ccc;
+	border-radius: 3px;
+	text-align: center;
+}
+
+.gallery .placeholder .icon-camera {
+	line-height: 106px;
+	font-size: 28px;
+	color: #ccc;
+
+}
+/*.userthumb-small {
+    width:50px;
+    height:50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+}*/
+
+.comments-list .review-container .review {
+	padding: 20px 0;
+	border-bottom: 1px dashed #a9a9a9;
+	position: relative;
+}
+
+.comments-list .review-container:first-child {
+	margin-top: 0;
+}
+
+.comments-list .review-container:first-child .review {
+	border-top: 1px solid #e5e5e5;
+}
+
+.comments-list .review-container:first-child .review:first-child {
+	border-top: 0 !important;
+}
+
+.comments-list.self .review {
+	margin-bottom: 20px;
+}
+
+.comments-list .review-container .info-left {
+	float: left;
+	width: 100px;
+	padding: 0 5px 0 20px;
+
+}
+
+.comments-list .reviewItem {
+	display:block;
+	clear:both;
+	padding: 10px 20px;
+    
+}
+
+.comments-list .reviewItem {
+    font-size: 1em;
+    line-height: 1.6;
+    font-weight: 300;
+}
+
+.comments-list .review .detail {
+	color: #888888;
+}
+
+
+.comments-list .review_info{
+	position: relative;
+
+}
+
+.comments-list .review_info #updateReview{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+
+.comments-list .review-container .reviewAction {
+	position:absolute;
+	right: 15px;
+    top: 45px;
+	display:none;
+}
+.comments-list .review-container:hover .reviewAction
+{
+	display:block;
+}
+
+.review-permalink {
+	color: #888;
+}
+.review-permalink a {
+	color: #888;
+}
+
+.comments-list .review .frating{
+	position: absolute;
+	right: 15px;
+	top: 20px;
+}
+
+/*.comments-list .review-container .review-permalink { 
+	display: none;
+}
+.comments-list .review-container:hover .review-permalink {
+	display: block;
+}*/
+
+
+.comments-list .review-container .reviewAction .btn {
+	padding: 5px;
+	font-size: 12px;
+}
+
+.comments-list .review-container .reviewAction .message {
+	display: block;
+	padding: 5px 0;
+	font-size: 12px;
+}
+
+
+.comments-list .bottom-info {
+	padding: 0 20px;
+	font-size: 12px;
+	
+
+}
+
+.comments-list .info_author {
+	color:#333;
+	font-size: 1.15em;
+    line-height: 1.4;
+    font-weight: 400;
+}
+
+.comments-list .info_author.line-centered {
+    line-height: 55px;
+}
+
+
+.comments-list .info_time {
+	color:#919599;
+	font-size: 12px;
+	
+}
+
+
+.comments-list .reviewItem p:last-child {
+    margin-bottom: 0;
+}
+
+.comments-list .review .foursquare-text {
+	font-size: 12px;
+	line-height: 18px;
+}
+.comments-list .review .icon-foursquare {
+	
+	color: #23badd;
+}
+
+.comments-list .review .info-right {
+    padding: 5px 10px;
+}
+
+.comments-list .highlighted
+{
+	background-color: #ffffdd;
+}
+
+#comment-form-holder {
+	padding: 0 0 15px;
+}
+
+#my-reviews {
+	border-top: 1px solid #e5e5e5;
+}
+
+.submitComment {
+	position: relative;
+	padding: 15px;
+}
+
+.review-login-form {
+	background: rgba(255,255,255,0.9);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	padding: 70px 80px 0;
+}
+
+.submitComment .txtstuff {
+    resize: none; /* remove this if you want the user to be able to resize it in modern browsers */
+    overflow: hidden;
+}
+
+.submitComment .hiddendiv {
+    display: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word; /* future version of deprecated 'word-wrap' */
+}
+
+/* the styles for 'commmon' are applied to both the textarea and the hidden clone */
+/* these must be the same for both */
+.submitComment .common {
+
+    min-height: 66px;
+    overflow: hidden;
+}
+
+/*.submitComment .btn-primary {
+	margin-top: 20px;
+
+}*/
+.submitComment #review_text {
+	
+	resize: vertical;
+	
+	white-space: pre-wrap;
+	word-wrap: break-word;	
+	min-height: 100px;
+	/*overflow-y: scroll;*/
+	margin-bottom: 5px; 
+
+}
+
+
+
+.highlighted-list {
+	border-left: 3px solid #e41d24;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+}
+
+.review-rating-vote-holder {
+	float: left;
+	width: 25%;
+	margin-top: 10px;
+	padding-right: 10px;
+
+}
+.review-rating-vote-holder.last {
+	padding-right: 0;
+}
+
+#reviews-foursquare-seperator {
+	padding: 0 15px;
+	height: 42px;
+	font-size: 12px;
+	line-height: 42px;
+	color: #888;
+	margin-bottom: 20px;
+	margin-top: -1px;
+	text-align: right;
+	background: #f4f4f4 url('../img/review-seperator.png') repeat-x;
+
+}
+
+
+.photos {
+   /* Prevent vertical gaps */
+   line-height: 0;
+   
+   -webkit-column-count: 5;
+   -webkit-column-gap:   0px;
+   -moz-column-count:    5;
+   -moz-column-gap:      0px;
+   column-count:         5;
+   column-gap:           0px;
+   
+}
+.photos img {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+}
+
+
+.icon-large {
+	font-size: 1.1em;
+}
+
+.submitComment .chosen-container {
+	margin-top: 5px;
+
+}
+.submitComment .chosen-container, .submitComment .chosen-drop, .submitComment .chosen-drop .chosen-search, .submitComment .chosen-drop .chosen-search input {
+  	width: 100% !important;
+  	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Override width */
+.submitComment .chosen-container { width: 100% !important; }
+
+
+.sms-widget p.lead{
+	color: #333;
+	font-size: 1.3em;
+	margin: 0.2em 0;
+}
+
+.sms-widget strong {
+	color: #000;
+	font-weight: 600;
+}
+
+.rating-widget h4 {
+	font-weight: 500;
+}
+
+.rating-widget h4 .rating-total {
+	font-size: 2em;
+	line-height: 1;
+}
+.rating-widget .frating {
+	float: none;
+}
+
+.rating-widget .panel-heading {
+	position: relative;
+}
+
+.rating-widget .panel-heading .rightside {
+	position: absolute;
+	right: 15px;
+	top: 10px;
+	text-align: right;
+}
+
+.rating-widget .panel-body {
+	padding: 10px;
+}
+
+.rating-widget .frating span.star.medium {
+	font-size: 16px;
+}
+
+.rating-widget .frating span.star.medium {
+	font-size: 18px;
+}
+.rating-widget ul {
+	margin: 0;
+}
+.rating-widget ul li {
+	line-height: 2.5;
+	padding: 4px 0;
+	border-bottom: 1px dashed #f2f2f2;
+}
+
+.rating-widget ul li:last-child {
+	border-bottom: 0;
+}
+
+.reviewScore {
+	font-size: 15px;
+}
+
+.reviewScore u {
+	font-size: 13px;
+}
+
+.likes-stat .btn {
+	font-size: 12px;
+	padding: 2px 10px;
+	border-radius: 15px;
+}
