@@ -154,7 +154,7 @@
     top: 47px;
     left: 0;
     width: 100%;
-    height: 40px;
+    height: 46px;
     background: #323233;
     box-shadow: 1px 0 2px rgba(0, 0, 0, 0.125);
     display: flex;
@@ -200,34 +200,79 @@
     height: 100%;
     margin-top: 93px;
   }
+
   /* Add a black background color to the top navigation */
-.topnav {
-  background-color: #042331;
-  overflow: hidden;
-}
+  .topnav {
+    position: fixed;
+    float: top;
+    width: 100%;
+    background-color: #042331;
+    overflow: hidden;
+  }
 
-/* Style the links inside the navigation bar */
-.topnav a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 15px;
-  border-right: 1px solid #03374e;
-}
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+    border-right: 1px solid #03374e;
+  }
 
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
 
-/* Add a color to the active/current link */
-.active {
-  background-color: #03374e;
-  color: white;
-}
+  /* Add a color to the active/current link */
+  .active {
+    background-color: #03374e;
+    color: white;
+  }
+
+  .innercontainer {
+
+  }
+
+  .table {
+    float: left;
+    width: 70%;
+    height: 100%;
+  }
+
+  .charts {
+    float: right;
+    width: 30%;
+    height: 100%;
+    background-color: green;
+  }
+
+  .upper {
+    background-color: blue;
+    height: 50%;
+    float: top;
+  }
+
+  .lower {
+    background-color: green;
+    height: 50%;
+    float: bottom;
+  }
+  .innerhedder h1{
+    color: grey;
+    font-weight: bold;
+    margin: 0px;
+    padding: 5px;
+    font-size: 18px;
+  }
+  .spacefiling{
+    width: 100%;
+    background-color: red;
+    height: 51px;
+  }
 </style>
 
 <?php
@@ -337,6 +382,23 @@ $userRole = Yii::app()->getModule('user')->user()->Role_ID;
       <a class="active" href="#home">SUMMARY</a>
       <a href="#news">ALLOCATED VEHICLE</a>
       <a href="#contact">IDLE VEHICLE</a>
+    </div>
+    <div class="innercontainer">
+      <div class="table">
+      <div class="spacefiling"></div>
+        <div class="innerhedder">
+          <h1>VEHICLE OVERVIEW</h1>
+          <div class="bar1">
+
+          </div>
+        </div>
+      </div>
+      <div class="charts">
+        <div class="upper">
+        </div>
+        <div class="lower">
+        </div>
+      </div>
     </div>
   </div>
 </div>
