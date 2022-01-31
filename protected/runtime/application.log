@@ -10089,3 +10089,686 @@ Stack trace:
 #3 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
 #4 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
 #5 {main} REQUEST_URI=/fleet/index.php?r=dashboard/create
+2022/01/26 14:32:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "edit".' in C:\xampp\htdocs\fleet\framework\web\CController.php:478
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CController.php(262): CController->missingAction('edit')
+#1 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(277): CController->run('edit')
+#2 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('Pizza/edit')
+#3 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#5 {main} REQUEST_URI=/fleet/index.php?r=Pizza/edit
+2022/01/26 19:03:13 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\fleet\framework\web\CController.php:328
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\fleet\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\fleet\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\fleet\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\fleet\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\xampp\htdocs\fleet\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(277): CController->run('update')
+#9 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('pizza/update')
+#10 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/fleet/index.php?r=pizza/update
+2022/01/26 19:03:36 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\fleet\framework\web\CController.php:328
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CController.php(301): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\fleet\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\fleet\framework\web\CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 C:\xampp\htdocs\fleet\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 C:\xampp\htdocs\fleet\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\xampp\htdocs\fleet\framework\web\CController.php(257): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(277): CController->run('view')
+#9 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('pizza/view')
+#10 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#12 {main} REQUEST_URI=/fleet/index.php?r=pizza/view
+2022/01/27 16:21:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/27 16:21:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/27 16:21:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/27 16:58:58 [error] [php] opendir(C:\xampp\htdocs\fleet\protected/../tmp_images/,C:\xampp\htdocs\fleet\protected/../tmp_images/): The system cannot find the file specified. (code: 2) (C:\xampp\htdocs\fleet\protected\controllers\MaDriverController.php:494)
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CController.php(300): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(134): MaDriverController->runAction()
+#2 C:\xampp\htdocs\fleet\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#3 C:\xampp\htdocs\fleet\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#4 C:\xampp\htdocs\fleet\framework\web\filters\CInlineFilter.php(59): MaDriverController->filterAccessControl()
+#5 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#6 C:\xampp\htdocs\fleet\framework\web\CController.php(283): CFilterChain->run()
+#7 C:\xampp\htdocs\fleet\framework\web\CController.php(257): MaDriverController->runActionWithFilters()
+#8 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(277): MaDriverController->run()
+#9 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#10 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\fleet\index.php(13): CWebApplication->run()
+REQUEST_URI=/fleet/index.php?r=MaDriver/DestroyImageSession
+in C:\xampp\htdocs\fleet\protected\controllers\MaDriverController.php (494)
+in C:\xampp\htdocs\fleet\index.php (13)
+2022/01/28 13:58:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:58:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:58:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:58:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:58:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:59:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 13:59:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:18:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:18:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:18:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:18:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:19:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:19:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:19:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:19:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:19:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:20:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:20:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:20:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:20:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:20:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:20:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:21:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:21:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:21:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:21:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:21:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:21:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:22:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:22:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:22:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:22:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:22:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:23:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:23:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:23:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:23:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:23:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:23:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:24:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:24:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:24:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:24:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:24:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:24:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:25:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:25:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:25:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:25:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:26:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:26:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:26:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:26:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:26:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:26:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:27:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:27:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:27:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:27:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:27:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:27:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:28:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:28:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:28:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:28:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:28:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:28:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:29:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:29:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:29:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:29:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:29:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:29:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:30:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:30:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:30:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:30:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:30:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:30:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:31:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:31:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:31:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:31:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:31:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:32:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:32:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:32:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 14:32:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/28 15:12:18 [error] [php] Undefined index: count (C:\xampp\htdocs\fleet\protected\views\dashboard\index.php:418)
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CController.php(867): DashboardController->renderFile()
+#1 C:\xampp\htdocs\fleet\framework\web\CController.php(780): DashboardController->renderPartial()
+#2 C:\xampp\htdocs\fleet\protected\controllers\DashboardController.php(128): DashboardController->render()
+#3 C:\xampp\htdocs\fleet\framework\web\actions\CInlineAction.php(50): DashboardController->actionIndex()
+#4 C:\xampp\htdocs\fleet\framework\web\CController.php(300): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(134): DashboardController->runAction()
+#6 C:\xampp\htdocs\fleet\framework\web\filters\CFilter.php(41): CFilterChain->run()
+#7 C:\xampp\htdocs\fleet\framework\web\CController.php(1145): CAccessControlFilter->filter()
+#8 C:\xampp\htdocs\fleet\framework\web\filters\CInlineFilter.php(59): DashboardController->filterAccessControl()
+#9 C:\xampp\htdocs\fleet\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter()
+#10 C:\xampp\htdocs\fleet\framework\web\CController.php(283): CFilterChain->run()
+#11 C:\xampp\htdocs\fleet\framework\web\CController.php(257): DashboardController->runActionWithFilters()
+#12 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(277): DashboardController->run()
+#13 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController()
+#14 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#15 C:\xampp\htdocs\fleet\index.php(13): CWebApplication->run()
+REQUEST_URI=/fleet/index.php?r=dashboard/index&menuId=dashboard
+in C:\xampp\htdocs\fleet\protected\views\dashboard\index.php (418)
+in C:\xampp\htdocs\fleet\protected\controllers\DashboardController.php (128)
+in C:\xampp\htdocs\fleet\index.php (13)
+2022/01/30 20:48:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
+2022/01/30 20:48:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user/tRVehicleBooking/GetServices".' in C:\xampp\htdocs\fleet\framework\web\CWebApplication.php:281
+Stack trace:
+#0 C:\xampp\htdocs\fleet\framework\web\CWebApplication.php(136): CWebApplication->runController('user/tRVehicleB...')
+#1 C:\xampp\htdocs\fleet\framework\base\CApplication.php(158): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\fleet\index.php(13): CApplication->run()
+#3 {main} REQUEST_URI=/fleet/index.php?r=user/tRVehicleBooking/GetServices
