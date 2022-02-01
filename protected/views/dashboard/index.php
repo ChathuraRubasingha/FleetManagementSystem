@@ -336,6 +336,9 @@
       </div>
     </div>
     <div class="chart_container col-lg-4">
+      <div class="pie chart">
+        
+      </div>
 
 
     </div>
