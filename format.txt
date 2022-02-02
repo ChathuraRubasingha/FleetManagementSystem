@@ -1,0 +1,189 @@
+<div class="formTable">
+            
+        <div class="tblrow">
+            	<div class="tdOne"></div>
+		<div class="tdTwo"></div>
+	</div>
+	
+	<div class="tblrow">
+            	<div class="tdOne"></div>
+		<div class="tdTwo"></div>
+	</div>
+
+
+
+	<div class="row" style="padding-left:37%;font-weight:bold">
+		<?php echo CHtml::submitButton('Search');?>
+	</div>
+
+</div>
+
+
+
+
+After <h1></h1>
+======================
+<div style="float: right; margin-top: -30px">
+
+</div>
+
+
+
+Add Button
+==========
+<?php echo CHtml::link('<img src="images/add.png" class="addIcon"  />',array('maVehicleRegistry/create'), array('title'=>'Add'));?>
+       
+                     
+Search Button
+=============
+<?php echo CHtml::link('<img src="images/search.png"  class="searchIcon"/>','#',array('class'=>'search-button','title'=>'Search')); ?>
+      
+
+view Button
+===========
+<?php echo CHtml::link('<img src="images/view.png" class="viewIcon" />',array('maVehicleRegistry/view&id='.$model->Vehicle_No),array('title'=>'View')); ?>
+                         
+
+Manage Button
+==============
+<?php echo CHtml::link('<img src="images/manage.png" class="manageIcon" />',array('tRAccident/admin'),array('title'=>'Manage')); ?>
+
+
+update Button
+============
+<?php echo CHtml::link('<img src="images/update.png" class="updateIcon" />',array('maVehicleRegistry/update&id='.$model->Vehicle_No),array('title'=>'Update')); ?>
+                           
+
+_search.php
+
+<div class="wide form" style="margin-left: 6%; margin-bottom: 40px;">
+
+
+upto 1st <td>
+==============
+<table width="550" style="margin-left:20px;">
+	<div class="row">
+        <tr style="width:200px;">
+            <td style="width:150px">
+
+
+
+
+Buttton 
+===========
+	9:51 AM 8/11/2014
+
+
+
+
+<style>
+
+input[type="submit"]
+{
+margin-left : -377px !important;
+}                                       
+
+</style>
+
+
+
+
+
+/////////////////////////
+
+button
+
+<div class="row" style="padding-left:37%;font-weight:bold">
+
+
+
+/////////////////
+_search
+==========
+
+
+
+
+
+public function actionDelete($id)
+	{
+            try
+            {
+                $this->loadModel($id)->delete();
+                if(!isset($_GET['ajax']))
+                {
+                    echo '<script>
+
+                        var bodyHeight = $("body").height() /*- $("#header").height() + $("#footer").height()*/;
+                        var headHeight =  $("header").height();
+                        var footerHeight =  $("footer").height();
+
+                        var height = bodyHeight + headHeight + footerHeight;
+
+                         $("#popDiv").height(height);
+                        $("#btnErrorOk").focus();
+                        $("#errorConfirm").fadeIn(500);
+                        $("#errorConfirm p").html("Successfully Deleted...");
+                        $("#popDiv").fadeIn(500);
+                    </script>';
+                }
+                else
+                {
+                    echo '<script>
+
+                        var bodyHeight = $("body").height() /*- $("#header").height() + $("#footer").height()*/;
+                        var headHeight =  $("header").height();
+                        var footerHeight =  $("footer").height();
+
+                        var height = bodyHeight + headHeight + footerHeight;
+
+                        $("#popDiv").height(height);
+                        $("#btnErrorOk").focus();
+                        $("#errorConfirm").fadeIn(500);
+                        $("#errorConfirm p").html("Successfully Deleted...");
+                        $("#popDiv").fadeIn(500);
+                        
+                    </script>';
+                }
+
+            }
+            catch(CDbException $e)
+            {
+                if(!isset($_GET['ajax']))
+                {
+                    echo '<script>
+                        var bodyHeight = $("body").height() /*- $("#header").height() + $("#footer").height()*/;
+                        var headHeight =  $("header").height();
+                        var footerHeight =  $("footer").height();
+
+                        var height = bodyHeight + headHeight + footerHeight;
+
+                        $("#popDiv").height(height);
+                        $("#btnErrorOk").focus();
+                        $("#errorConfirm").fadeIn(500);
+                        $("#popDiv").fadeIn(500);
+
+                    </script>';
+                }
+                else
+                {
+                    echo '<script>
+                        var bodyHeight = $("body").height() /*- $("#header").height() + $("#footer").height()*/;
+                        var headHeight =  $("header").height();
+                        var footerHeight =  $("footer").height();
+
+                        var height = bodyHeight + headHeight + footerHeight;
+
+                        $("#popDiv").height(height);
+                        $("#btnConfirmOk").focus();
+                        $("#errorConfirm").fadeIn(500);
+                        $("#popDiv").fadeIn(500);
+
+                    </script>';
+                }
+            }
+            if(!isset($_GET['ajax']))
+                $this->redirect(isset($_POST['returnUrl']) ? $_POST['returnUrl'] : array('admin'));
+		
+	
+	}
